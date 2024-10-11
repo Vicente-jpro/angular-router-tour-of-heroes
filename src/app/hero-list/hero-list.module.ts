@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { HeroListRoutingModule } from './hero-list-routing.module';
 import { HeroListComponent } from './hero-list.component';
 import { RouterModule } from '@angular/router';
+import { ShowComponent } from './show/show.component';
 
 
 @NgModule({
   declarations: [
-    HeroListComponent
+    HeroListComponent,
+    ShowComponent
   ],
   imports: [
     CommonModule,
