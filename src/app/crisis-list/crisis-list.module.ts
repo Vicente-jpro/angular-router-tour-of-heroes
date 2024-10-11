@@ -12,6 +12,9 @@ import { CrisisListComponent } from './crisis-list.component';
   imports: [
     CommonModule,
     CrisisListRoutingModule
+  ],
+  exports: [
+    CrisisListComponent
   ]
 })
 export class CrisisListModule { }

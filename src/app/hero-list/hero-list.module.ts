@@ -12,6 +12,9 @@ import { HeroListComponent } from './hero-list.component';
   imports: [
     CommonModule,
     HeroListRoutingModule
+  ],
+  exports:[
+    HeroListComponent
   ]
 })
 export class HeroListModule { }
