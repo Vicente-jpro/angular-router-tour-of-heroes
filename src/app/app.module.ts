@@ -7,6 +7,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HeroListModule } from './hero-list/hero-list.module';
 import { CrisisListModule } from './crisis-list/crisis-list.module';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     HeroListModule,
+    FormsModule,
     CrisisListModule,
     RouterModule
   ],
