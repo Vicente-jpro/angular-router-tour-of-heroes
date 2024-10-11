@@ -5,10 +5,10 @@ import { HeroListModule } from './hero-list/hero-list.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  { path: 'crisis-center', component: CrisisListComponent},
-  { path: 'heroes', component: HeroListModule},
-  { path: '', redirectTo: '/heroes', pathMatch: 'full'},
-  { path: '**', component: PageNotFoundComponent}
+ // { path: 'crisis-center', component: CrisisListComponent},
+  //{ path: 'heroes', component: HeroListModule},
+  //{ path: '', redirectTo: '/heroes', pathMatch: 'full'},
+  //{ path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({
