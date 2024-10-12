@@ -5,6 +5,7 @@ import { HeroListComponent } from './hero-list.component';
 import { RouterModule } from '@angular/router';
 import { HeroDetailComponent } from './hero/hero-detail.component';
 import { FormsModule } from '@angular/forms';
+import { HeroesRoutingModule } from './heroes-routing.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    HeroesRoutingModule
   ],
   exports:[
     HeroListComponent,

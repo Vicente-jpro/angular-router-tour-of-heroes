@@ -10,7 +10,7 @@
     <tr *ngFor="let hero of heroes$ | async hero" [class.selected]="hero.id === selectedId">
         <th>{{hero.id}}</th>
       <td> 
-        <a [routerLink]="['/show', hero.id]">{{hero.nome}}</a> 
+        <a [routerLink]="['/hero', hero.id]">{{hero.nome}}</a> 
     </td>
     </tr>
   </table>
