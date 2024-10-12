@@ -1,14 +1,16 @@
 <p>hero-list works!</p>
 
+<button type="button" routerLink="/sidekicks">Go to sidekicks</button>
+
 <table>
     <tr>
       <th>ID</th>
       <th>Nome</th>
     </tr>
-    <tr *ngFor="let hero of heroes">
+    <tr *ngFor="let hero of heroes$ | async hero">
         <th>{{hero.id}}</th>
       <td> 
-        <a [routerLink]="['show', hero.id]">{{hero.nome}}</a> 
+        <a [routerLink]="['/show', hero.id]">{{hero.nome}}</a> 
     </td>
     </tr>
   </table>

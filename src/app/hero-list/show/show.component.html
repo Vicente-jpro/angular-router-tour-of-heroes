@@ -1,9 +1,8 @@
-<h1>show works!</h1>
-<p>
-    <strong>ID: </strong> {{hero$.id}} 
-</p>
-<p>
-    <strong>{{hero$.nome}}</strong>
-</p>
-
-<button (click)="gotoHero(hero)">Goto Heroes</button>
+<h2>Heroes</h2>
+<div *ngIf="hero$ | async as hero">
+    <h3> {{ hero.nome }}</h3>
+    <p>Id: {{hero.id}}</p>
+    <label for="hero-nome">Hero name:</label>
+    <input type="text" id="hero-nome" [(ngModel)]="hero.nome" placeholder="name">
+    <button type="button" (click)="gotoHeroes(hero)">Back</button>
+</div>

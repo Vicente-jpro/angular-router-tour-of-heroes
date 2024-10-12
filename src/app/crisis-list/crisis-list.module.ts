@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CrisisListRoutingModule } from './crisis-list-routing.module';
 import { CrisisListComponent } from './crisis-list.component';
 
 
@@ -11,7 +10,6 @@ import { CrisisListComponent } from './crisis-list.component';
   ],
   imports: [
     CommonModule,
-    CrisisListRoutingModule
   ],
   exports: [
     CrisisListComponent

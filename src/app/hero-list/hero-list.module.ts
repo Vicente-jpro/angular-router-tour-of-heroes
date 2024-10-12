@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { HeroListRoutingModule } from './hero-list-routing.module';
 import { HeroListComponent } from './hero-list.component';
 import { RouterModule } from '@angular/router';
 import { ShowComponent } from './show/show.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -14,10 +14,12 @@ import { ShowComponent } from './show/show.component';
   ],
   imports: [
     CommonModule,
-    HeroListRoutingModule
+    FormsModule,
+    RouterModule
   ],
   exports:[
-    HeroListComponent
+    HeroListComponent,
+    ShowComponent
   ]
 })
 export class HeroListModule { }

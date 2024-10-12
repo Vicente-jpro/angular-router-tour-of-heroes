@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { HeroService } from '../../services/hero.service';
-import { Observable } from 'rxjs';
+import { Observable, switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-show',
@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class ShowComponent implements OnInit{
 
-  hero$: Observable<Hero> = new Observable<Hero>;
+  hero$!: Observable<Hero> 
 
   constructor(
     private route: ActivatedRoute,
@@ -20,12 +20,13 @@ export class ShowComponent implements OnInit{
   ){}
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id')!; 
-    const idHero = Number.parseInt(id)
-    this.hero$ = this.heroService.getHero(idHero); 
+   
+    this.hero$ = this.route.paramMap.pipe(
+      switchMap((params: ParamMap) => this.heroService.getHero(params.get('id')!))
+    ) 
   }
 
-  gotoHero(hero: Hero){
+  gotoHeroes(hero: Hero){
     const heroId = hero ? hero.id : null;
     // Pass along the hero id if available
     // so that the HeroList component can select that hero.
@@ -33,5 +34,6 @@ export class ShowComponent implements OnInit{
     this.router.navigate(['/heroes', { id: heroId, foo: 'foo' }]);
     this.router.navigate(['/heroes'])
   }
+  
 
 }
