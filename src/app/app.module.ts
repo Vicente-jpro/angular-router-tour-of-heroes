@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HeroListModule } from './hero-list/hero-list.module';
 import { FormsModule } from '@angular/forms';
+import { CrisisListModule } from './crisis-list/crisis-list.module';
 
 
 
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HeroListModule
+    HeroListModule,
+    CrisisListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

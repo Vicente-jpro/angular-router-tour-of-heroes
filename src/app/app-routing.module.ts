@@ -7,7 +7,7 @@ import { HeroListComponent } from './hero-list/hero-list.component';
 import { HeroDetailComponent } from './hero-list/hero/hero-detail.component';
 
 const routes: Routes = [
-  { path: 'crisis-center', component: CrisisListComponent },
+  // { path: 'crisis-center', component: CrisisListComponent },
   // { path: 'heroes',        component: HeroListComponent },
   // { path: 'show/:id',        component: HeroDetailComponent },
   // { path: '',   redirectTo: '/heroes', pathMatch: 'full' },
