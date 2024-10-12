@@ -1,13 +1,13 @@
 <p>hero-list works!</p>
 
 <button type="button" routerLink="/sidekicks">Go to sidekicks</button>
-
-<table>
+<link rel="stylesheet" href="hero-list.component.css">
+<table class="heroes">
     <tr>
       <th>ID</th>
       <th>Nome</th>
     </tr>
-    <tr *ngFor="let hero of heroes$ | async hero">
+    <tr *ngFor="let hero of heroes$ | async hero" [class.selected]="hero.id === selectedId">
         <th>{{hero.id}}</th>
       <td> 
         <a [routerLink]="['/show', hero.id]">{{hero.nome}}</a> 
