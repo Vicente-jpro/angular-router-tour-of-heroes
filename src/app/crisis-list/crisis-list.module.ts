@@ -15,7 +15,7 @@ import { CrisisCenterRoutingModule } from './crisis-center-routing.module';
   ],
   imports: [
     CommonModule,
-    CrisisCenterRoutingModule
+    CrisisCenterRoutingModule,
   ],
   exports: [
     CrisisListComponent,

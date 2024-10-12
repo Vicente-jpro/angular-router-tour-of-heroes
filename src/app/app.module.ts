@@ -7,6 +7,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HeroListModule } from './hero-list/hero-list.module';
 import { FormsModule } from '@angular/forms';
 import { CrisisListModule } from './crisis-list/crisis-list.module';
+import { ComposeMessageComponent } from './compose-message/compose-message.component';
 
 
 
@@ -14,6 +15,7 @@ import { CrisisListModule } from './crisis-list/crisis-list.module';
   declarations: [
     AppComponent,
     PageNotFoundComponent,
+    ComposeMessageComponent,
   ],
   imports: [
     BrowserModule,
