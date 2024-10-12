@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class CrisisDetailComponent {
 
+  cancel() {
+    this.gotoCrises();
+  }
+  
+  save() {
+  //  this.crisis.name = this.editName;
+    this.gotoCrises();
+  }
+
+  gotoCrises(): void{
+
+  }
 }
