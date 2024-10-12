@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { CrisisListModule } from './crisis-list/crisis-list.module';
 import { ComposeMessageComponent } from './compose-message/compose-message.component';
 import { AdminModule } from './admin/admin.module';
+import { LoginComponent } from './auth/login/login.component';
 
 
 
@@ -17,6 +18,7 @@ import { AdminModule } from './admin/admin.module';
     AppComponent,
     PageNotFoundComponent,
     ComposeMessageComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
