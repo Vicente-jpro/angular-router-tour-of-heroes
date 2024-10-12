@@ -1,15 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Hero } from '../hero-list/hero';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HeroService {
 
-  constructor() { }
+  heroes: Hero[] = []
+  heroes$: Observable<Hero[]> = new Observable<Hero[]>
 
-  getHeroes(): Hero[]{
+  constructor() {
     let hero1 = new Hero()
+
     hero1.id = 12;
     hero1.nome = 'Madalena'
 
@@ -24,10 +27,24 @@ export class HeroService {
     let hero4 = new Hero()
     hero4.id = 8;
     hero4.nome = 'Sebastiao'
-    let heroes: Hero[] = []
 
-    heroes = [hero1, hero2, hero3, hero4]
-    
-    return heroes  
+    this.heroes = [hero1, hero2, hero3, hero4]
+    this.heroes$ =[ of(hero1), of(hero1), of(hero1), of(hero1) ]
+   }
+
+  getHeroes(): Hero[]{
+    return this.heroes  
   }
+
+  getHeroesObservable(): Observable<Hero[]>{
+    return this.heroes$
+  }
+  getHero(idHero: number): Observable<Hero>{
+    let hero$ = of(this.heroes[0])
+    
+    return hero$
+    
+  }
+
+
 }

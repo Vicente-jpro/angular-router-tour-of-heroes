@@ -1,8 +1,9 @@
 <h1>show works!</h1>
 <p>
-    <strong>ID: </strong> {{hero.id}} 
+    <strong>ID: </strong> {{hero$.id}} 
 </p>
 <p>
-    <strong>{{hero.nome}}</strong>
+    <strong>{{hero$.nome}}</strong>
 </p>
 
+<button (click)="gotoHero(hero)">Goto Heroes</button>
