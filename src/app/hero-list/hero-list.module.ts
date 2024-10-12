@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { HeroListComponent } from './hero-list.component';
 import { RouterModule } from '@angular/router';
-import { ShowComponent } from './hero/hero-detail.component';
+import { HeroDetailComponent } from './hero/hero-detail.component';
 import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     HeroListComponent,
-    ShowComponent
+    HeroDetailComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +19,7 @@ import { FormsModule } from '@angular/forms';
   ],
   exports:[
     HeroListComponent,
-    ShowComponent
+    HeroDetailComponent
   ]
 })
 export class HeroListModule { }

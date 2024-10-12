@@ -9,7 +9,7 @@ import { Observable, switchMap } from 'rxjs';
   templateUrl: './hero-detail.component.html',
   styleUrl: './hero-detail.component.css'
 })
-export class ShowComponent implements OnInit{
+export class HeroDetailComponent implements OnInit{
 
   hero$!: Observable<Hero> 
 
