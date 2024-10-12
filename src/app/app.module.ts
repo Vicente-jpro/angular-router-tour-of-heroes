@@ -5,22 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HeroListModule } from './hero-list/hero-list.module';
-import { CrisisListModule } from './crisis-list/crisis-list.module';
-import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { CrisisListModule } from './crisis-list/crisis-list.module';
+import { ComposeMessageComponent } from './compose-message/compose-message.component';
+import { AdminModule } from './admin/admin.module';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
+    ComposeMessageComponent,
   ],
   imports: [
     BrowserModule,
+    AdminModule,
     AppRoutingModule,
-    HeroListModule,
     FormsModule,
-    CrisisListModule,
-    RouterModule
+    HeroListModule,
+    CrisisListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

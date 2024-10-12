@@ -11,8 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HeroListComponent implements OnInit{
 
-  heroes: Hero[] = []
-  heroes$: Observable<Hero[]>;
+  heroes$!: Observable<Hero[]>;
   selectedId = 0;
 
   constructor(
@@ -24,11 +23,10 @@ export class HeroListComponent implements OnInit{
     this.heroes$ = this.route.paramMap.pipe(
       switchMap(params => {
         this.selectedId = parseInt(params.get('id')!, 10);
-        return this.heroService.getHeroesObservable();
+        return this.heroService.getHeroes();
       })
     );
 
-    this.heroes = this.heroService.getHeroes()
   }
   
 
