@@ -5,9 +5,9 @@ import { HeroService } from '../../services/hero.service';
 import { Observable, switchMap } from 'rxjs';
 
 @Component({
-  selector: 'app-show',
-  templateUrl: './show.component.html',
-  styleUrl: './show.component.css'
+  selector: 'app-hero-detail',
+  templateUrl: './hero-detail.component.html',
+  styleUrl: './hero-detail.component.css'
 })
 export class ShowComponent implements OnInit{
 

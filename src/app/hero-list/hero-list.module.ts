@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { HeroListComponent } from './hero-list.component';
 import { RouterModule } from '@angular/router';
-import { ShowComponent } from './show/show.component';
+import { ShowComponent } from './hero/hero-detail.component';
 import { FormsModule } from '@angular/forms';
 
 
