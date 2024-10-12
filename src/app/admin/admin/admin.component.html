@@ -1,1 +1,8 @@
-<p>admin works!</p>
+<h2>Admin</h2>
+<nav>
+  <button routerLink="./" routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page">Dashboard</button>
+  <button routerLink="./crises" routerLinkActive="active" ariaCurrentWhenActive="page">Manage Crises</button>
+  <button routerLink="./heroes" routerLinkActive="active" ariaCurrentWhenActive="page">Manage Heroes</button>
+</nav>
+<router-outlet></router-outlet>
