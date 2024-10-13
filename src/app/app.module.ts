@@ -8,7 +8,6 @@ import { HeroListModule } from './hero-list/hero-list.module';
 import { FormsModule } from '@angular/forms';
 import { CrisisListModule } from './crisis-list/crisis-list.module';
 import { ComposeMessageComponent } from './compose-message/compose-message.component';
-import { AdminModule } from './admin/admin.module';
 import { LoginComponent } from './auth/login/login.component';
 
 
@@ -22,7 +21,6 @@ import { LoginComponent } from './auth/login/login.component';
   ],
   imports: [
     BrowserModule,
-    AdminModule,
     AppRoutingModule,
     FormsModule,
     HeroListModule,
