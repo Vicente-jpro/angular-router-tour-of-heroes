@@ -2,9 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
 
+## Router tutorial: tour of heroes
+
+Run `ng serve` for a dev server. Navigate to `https://v17.angular.io/guide/router-tutorial-toh`. The application will automatically reload if you change any of the source files.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
 
 ## Code scaffolding
 
