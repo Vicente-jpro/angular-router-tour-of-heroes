@@ -1,5 +1,5 @@
 import { inject } from '@angular/core';
-import { CanActivateFn, Router } from '@angular/router';
+import { CanActivateFn, NavigationExtras, Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
 
 export const authGuard: CanActivateFn = (route, state) => {
@@ -11,8 +11,13 @@ export const authGuard: CanActivateFn = (route, state) => {
   if (authService.isLoggedIn) {
     return true;
   }
+  // Create a dummy session id
+  const sessionId = 123456789;
 
-  // Redirect to the login page
-  return router.parseUrl('/login');
-  
+  const navigationExtras: NavigationExtras = {
+    queryParams: { session_id: sessionId },
+    fragment: 'anchor'
+  };
+
+  return router.createUrlTree(['/login'], navigationExtras);
 };
