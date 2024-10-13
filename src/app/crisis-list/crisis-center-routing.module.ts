@@ -5,18 +5,18 @@ import { CrisisCenterHomeComponent } from './crisis-center-home/crisis-center-ho
 import { CrisisDetailComponent } from './crisis-detail/crisis-detail.component';
 
 const routes: Routes = [
-    
- { path: 'crisis-center', component: CrisisCenterHomeComponent, children: [
+ 
+ { path: '', component: CrisisCenterHomeComponent, children: [
     { path: '', component: CrisisListComponent, children: [
         {  path: ':id',  component: CrisisDetailComponent },
         {  path: '', component: CrisisCenterHomeComponent }
     ]}
- ]}
-      
+ ]},
+  
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class CrisisCenterRoutingModule { }

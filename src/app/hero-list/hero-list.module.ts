@@ -16,7 +16,7 @@ import { HeroesRoutingModule } from './heroes-routing.module';
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule,
+   // RouterModule,
     HeroesRoutingModule
   ],
   exports:[
