@@ -22,7 +22,7 @@ const routes: Routes = [
               .then(m => m.CrisisListModule)
   },
   { path: '',   redirectTo: '/heroes', pathMatch: 'full' },
- // { path: '**', component: PageNotFoundComponent }
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

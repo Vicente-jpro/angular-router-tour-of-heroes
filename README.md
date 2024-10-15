@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Router tutorial: tour of heroes
 
-Run `ng serve` for a dev server. Navigate to `https://v17.angular.io/guide/router-tutorial-toh`. The application will automatically reload if you change any of the source files.
+This is a tutorial from `https://v17.angular.io/guide/router-tutorial-toh`.
 
 
 ## Development server
