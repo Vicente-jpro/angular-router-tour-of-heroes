@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-router-tour-of-heroes';
+
+  show():string{
+    return "This is the message."
+  }
 }

@@ -10,8 +10,7 @@ import { CrisisListModule } from './crisis-list/crisis-list.module';
 import { ComposeMessageComponent } from './compose-message/compose-message.component';
 import { LoginComponent } from './auth/login/login.component';
 import { Router } from '@angular/router';
-
-
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -25,7 +24,8 @@ import { Router } from '@angular/router';
     AppRoutingModule,
     FormsModule,
     HeroListModule,
-    CrisisListModule
+    CrisisListModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
